@@ -10,6 +10,10 @@ class AdminService{
     login(person){
         return axios.post("http://localhost:8083/usecase/admin/login",person)
     }
+    
+    applyleave(leave){
+        return axios.post("http://localhost:8083/usecase/student/applyleave",leave);
+    }
 }
 
 export default new AdminService();
